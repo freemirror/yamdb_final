@@ -8,7 +8,8 @@ services:
     env_file:
       - ./.env
   web:
-    build: ../api_yamdb/
+    #build: ../api_yamdb/
+    image: freemirror/api_yamdb:v1.00.0000
     restart: always
     volumes:
       - static_value:/app/static/
